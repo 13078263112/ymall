@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/ymall-cms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ymall-oms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ymall-pms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ymall-sms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ymall-ums/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ymall-web/src/main/java" charset="UTF-8" />
+  </component>
+</project>

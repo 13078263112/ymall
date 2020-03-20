@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ymall-web" />
+        <module name="ymall-oms" />
+        <module name="ymall-cms" />
+        <module name="ymall-pms" />
+        <module name="ymall-api" />
+        <module name="ymall-common" />
+        <module name="ymall-ums" />
+        <module name="ymall-sms" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ymall-cms" options="-parameters" />
+      <module name="ymall-oms" options="-parameters" />
+      <module name="ymall-pms" options="-parameters" />
+      <module name="ymall-sms" options="-parameters" />
+      <module name="ymall-ums" options="-parameters" />
+      <module name="ymall-web" options="-parameters" />
+    </option>
+  </component>
+</project>
