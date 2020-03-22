@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    name: ymall-oms
+  registry:
+    address: 192.168.157.128:2181
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 20980
+  consumer:
+    check: false
+  scan:
+    base-packages: com.ywc.ymall.oms.service.impl

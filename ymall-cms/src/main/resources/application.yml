@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    name: ymall-cms
+  registry:
+    address: 192.168.157.128:2181
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 20880
+  consumer:
+    check: false
+  scan:
+    base-packages: com.ywc.ymall.cms.service.impl
