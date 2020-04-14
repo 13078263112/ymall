@@ -2,6 +2,9 @@ package com.ywc.ymall.pms.service;
 
 import com.ywc.ymall.pms.entity.ProductCategory;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywc.ymall.to.PmsProductCategoryWithChildrenItem;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ProductCategoryService extends IService<ProductCategory> {
 
+    List<PmsProductCategoryWithChildrenItem> listWithChildren();
 }

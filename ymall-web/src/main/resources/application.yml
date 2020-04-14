@@ -1,0 +1,17 @@
+dubbo:
+  application:
+    name: ymall-web
+  registry:
+    address: 192.168.157.128:2181
+    protocol: zookeeper
+  consumer:
+    check: false
+server:
+  port: 8080
+ymall:
+  jwt:
+    tokenHeader: Authorization
+    secret: ywc_2020
+    expiration: 604800
+    tokenHead: Token
+
