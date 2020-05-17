@@ -1,468 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e82af5bc-8db0-4fa6-86bb-ab2a26aadcbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ymall-ums/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ymall-web/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="e82af5bc-8db0-4fa6-86bb-ab2a26aadcbc" name="Default Changelist" comment="完成部分商品管理功能">
+      <change afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/constant/EsConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/search/service/SearchProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/vo/PmsProductParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-shop-portal/src/main/java/com/ywc/shop/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-shop-portal/src/main/java/com/ywc/shop/controller/ProductSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/cms/CmsPrefrenceAreaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/cms/CmsSubjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/oss/Controller/OssController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/oss/compent/OssCompent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/pms/PmsProductAttributeCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/ums/vo/UmsMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/BrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/ProductAttributeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/ProductAttributeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/cms/service/PrefrenceAreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/cms/service/PrefrenceAreaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/cms/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/cms/service/SubjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/constant/RedisCacheConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/constant/RedisCacheConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/ProductAttributeCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/ProductAttributeCategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/ProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/ProductCategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/ums/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/ums/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/BrandService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/ProductAttributeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/ProductAttributeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/SkuStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/pms/service/SkuStockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/sms/service/HomeAdvertiseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/sms/service/HomeAdvertiseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/to/PmsProductCategoryWithChildrenItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/to/PmsProductCategoryWithChildrenItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/ums/service/MemberLevelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/ums/service/MemberLevelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/cms/service/PrefrenceAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/cms/service/PrefrenceAreaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/cms/service/SubjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/cms/service/SubjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/constant/RedisCacheConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/constant/RedisCacheConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/ProductAttributeCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/ProductAttributeCategoryService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/ProductCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/ProductCategoryService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/ums/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/ums/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-cms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-cms/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-cms/src/main/java/com/ywc/ymall/cms/YmallCmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-cms/src/main/java/com/ywc/ymall/cms/YmallCmsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-cms/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/CodeGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/entity/PrefrenceArea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/entity/PrefrenceAreaProductRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/entity/Subject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/entity/SubjectCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/entity/SubjectComment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/entity/SubjectProductRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/entity/Topic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/entity/TopicCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/entity/TopicComment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/service/PrefrenceAreaProductRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/service/PrefrenceAreaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/service/SubjectCategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/service/SubjectCommentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/service/SubjectProductRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/service/SubjectService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/service/TopicCategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/service/TopicCommentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/cms/service/TopicService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/entity/CartItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/entity/CompanyAddress.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/entity/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/entity/OrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/entity/OrderOperateHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/entity/OrderReturnApply.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/entity/OrderReturnReason.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/entity/OrderSetting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/service/CartItemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/service/CompanyAddressService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/service/OrderItemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/service/OrderOperateHistoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/service/OrderReturnApplyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/service/OrderReturnReasonService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/oms/service/OrderSettingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/Album.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/AlbumPic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/Brand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/CommentReplay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/FeightTemplate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/MemberPrice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/ProductAttribute.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/ProductAttributeCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/ProductAttributeValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/ProductCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/ProductCategoryAttributeRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/ProductFullReduction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/ProductLadder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/ProductOperateLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/ProductVertifyRecord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/entity/SkuStock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/AlbumMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/AlbumPicMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/BrandMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/CommentMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/CommentReplayMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/FeightTemplateMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/MemberPriceMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductAttributeCategoryMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductAttributeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductAttributeValueMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductCategoryAttributeRelationMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductCategoryMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductFullReductionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductLadderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductOperateLogMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/ProductVertifyRecordMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/SkuStockMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/AlbumMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/AlbumMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/AlbumPicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/AlbumPicMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/BrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/BrandMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/CommentReplayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/CommentReplayMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/FeightTemplateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/FeightTemplateMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/MemberPriceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/MemberPriceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductAttributeCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductAttributeCategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductAttributeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductAttributeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductAttributeValueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductAttributeValueMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductCategoryAttributeRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductCategoryAttributeRelationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductCategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductFullReductionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductFullReductionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductLadderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductLadderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductOperateLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductOperateLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductVertifyRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductVertifyRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/mapper/xml/SkuStockMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/SkuStockMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/AlbumPicService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/AlbumService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/BrandService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/CommentReplayService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/CommentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/FeightTemplateService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/MemberPriceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductAttributeCategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductAttributeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductAttributeValueService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductCategoryAttributeRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductCategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductFullReductionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductLadderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductOperateLogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/ProductVertifyRecordService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/SkuStockService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/AlbumPicServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/AlbumServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/BrandServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/CommentReplayServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/CommentServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/FeightTemplateServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/MemberPriceServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductAttributeCategoryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductAttributeServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductAttributeValueServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductCategoryAttributeRelationServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductFullReductionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductLadderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductOperateLogServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/ProductVertifyRecordServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/pms/service/impl/SkuStockServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/Coupon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/CouponHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/CouponProductCategoryRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/CouponProductRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/FlashPromotion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/FlashPromotionLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/FlashPromotionProductRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/FlashPromotionSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/HomeAdvertise.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/HomeBrand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/HomeNewProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/HomeRecommendProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/entity/HomeRecommendSubject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/CouponHistoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/CouponProductCategoryRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/CouponProductRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/CouponService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/FlashPromotionLogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/FlashPromotionProductRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/FlashPromotionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/FlashPromotionSessionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/HomeAdvertiseService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/HomeBrandService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/HomeNewProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/HomeRecommendProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/sms/service/HomeRecommendSubjectService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/AdminLoginLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/AdminPermissionRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/AdminRoleRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/GrowthChangeHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/IntegrationChangeHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/IntegrationConsumeSetting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/MemberLevel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/MemberLoginLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/MemberMemberTagRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/MemberProductCategoryRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/MemberReceiveAddress.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/MemberRuleSetting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/MemberStatisticsInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/MemberTag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/MemberTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/Permission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/entity/RolePermissionRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/AdminLoginLogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/AdminPermissionRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/AdminRoleRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/AdminService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/GrowthChangeHistoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/IntegrationChangeHistoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/IntegrationConsumeSettingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberLevelService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberLoginLogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberMemberTagRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberProductCategoryRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberReceiveAddressService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberRuleSettingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberStatisticsInfoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberTagService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/MemberTaskService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/PermissionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/RolePermissionRelationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/RoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/impl/AdminServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/src/main/java/com/ywc/ymall/ums/service/impl/GrowthChangeHistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-ums/src/main/java/com/ywc/ymall/ums/service/impl/GrowthChangeHistoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/META-INF/ymall-mbg.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/CodeGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/entity/PrefrenceArea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/entity/PrefrenceAreaProductRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/entity/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/entity/SubjectCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/entity/SubjectComment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/entity/SubjectProductRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/entity/Topic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/entity/TopicCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/entity/TopicComment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/mapper/PrefrenceAreaMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/mapper/PrefrenceAreaProductRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/mapper/SubjectCategoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/mapper/SubjectCommentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/mapper/SubjectMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/mapper/SubjectProductRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/mapper/TopicCategoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/mapper/TopicCommentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/mapper/TopicMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/PrefrenceAreaProductRelationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/PrefrenceAreaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/SubjectCategoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/SubjectCommentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/SubjectProductRelationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/SubjectService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/TopicCategoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/TopicCommentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/TopicService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/impl/PrefrenceAreaProductRelationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/impl/PrefrenceAreaServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/impl/SubjectCategoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/impl/SubjectCommentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/impl/SubjectProductRelationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/impl/SubjectServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/impl/TopicCategoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/impl/TopicCommentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/cms/service/impl/TopicServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/entity/CartItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/entity/CompanyAddress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/entity/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/entity/OrderItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/entity/OrderOperateHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/entity/OrderReturnApply.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/entity/OrderReturnReason.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/entity/OrderSetting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/mapper/CartItemMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/mapper/CompanyAddressMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/mapper/OrderItemMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/mapper/OrderMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/mapper/OrderOperateHistoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/mapper/OrderReturnApplyMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/mapper/OrderReturnReasonMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/mapper/OrderSettingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/CartItemService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/CompanyAddressService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/OrderItemService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/OrderOperateHistoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/OrderReturnApplyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/OrderReturnReasonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/OrderSettingService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/impl/CartItemServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/impl/CompanyAddressServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/impl/OrderItemServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/impl/OrderOperateHistoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/impl/OrderReturnApplyServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/impl/OrderReturnReasonServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/impl/OrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/oms/service/impl/OrderSettingServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/Album.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/AlbumPic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/Brand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/CommentReplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/FeightTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/MemberPrice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/ProductAttribute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/ProductAttributeCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/ProductAttributeValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/ProductCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/ProductCategoryAttributeRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/ProductFullReduction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/ProductLadder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/ProductOperateLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/ProductVertifyRecord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/entity/SkuStock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/AlbumMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/AlbumPicMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/BrandMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/CommentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/CommentReplayMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/FeightTemplateMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/MemberPriceMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductAttributeCategoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductAttributeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductAttributeValueMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductCategoryAttributeRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductCategoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductFullReductionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductLadderMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductOperateLogMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/ProductVertifyRecordMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/mapper/SkuStockMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/AlbumPicService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/AlbumService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/BrandService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/CommentReplayService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/CommentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/FeightTemplateService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/MemberPriceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductAttributeCategoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductAttributeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductAttributeValueService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductCategoryAttributeRelationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductCategoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductFullReductionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductLadderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductOperateLogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/ProductVertifyRecordService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/SkuStockService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/AlbumPicServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/AlbumServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/BrandServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/CommentReplayServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/CommentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/FeightTemplateServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/MemberPriceServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductAttributeCategoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductAttributeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductAttributeValueServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductCategoryAttributeRelationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductCategoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductFullReductionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductLadderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductOperateLogServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/ProductVertifyRecordServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/pms/service/impl/SkuStockServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/Coupon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/CouponHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/CouponProductCategoryRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/CouponProductRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/FlashPromotion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/FlashPromotionLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/FlashPromotionProductRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/FlashPromotionSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/HomeAdvertise.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/HomeBrand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/HomeNewProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/HomeRecommendProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/entity/HomeRecommendSubject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/CouponHistoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/CouponMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/CouponProductCategoryRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/CouponProductRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/FlashPromotionLogMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/FlashPromotionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/FlashPromotionProductRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/FlashPromotionSessionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/HomeAdvertiseMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/HomeBrandMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/HomeNewProductMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/HomeRecommendProductMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/mapper/HomeRecommendSubjectMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/CouponHistoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/CouponProductCategoryRelationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/CouponProductRelationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/CouponService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/FlashPromotionLogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/FlashPromotionProductRelationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/FlashPromotionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/FlashPromotionSessionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/HomeAdvertiseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/HomeBrandService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/HomeNewProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/HomeRecommendProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/HomeRecommendSubjectService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/CouponHistoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/CouponProductCategoryRelationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/CouponProductRelationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/CouponServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/FlashPromotionLogServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/FlashPromotionProductRelationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/FlashPromotionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/FlashPromotionSessionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/HomeAdvertiseServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/HomeBrandServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/HomeNewProductServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/HomeRecommendProductServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-mbg/target/classes/com/ywc/ymall/sms/service/impl/HomeRecommendSubjectServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-oms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-oms/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-oms/src/main/java/com/ywc/ymall/oms/YmallOmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-oms/src/main/java/com/ywc/ymall/oms/YmallOmsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/SkuStockService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/pms/service/SkuStockService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/sms/service/HomeAdvertiseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/sms/service/HomeAdvertiseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/to/PmsProductCategoryWithChildrenItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/to/PmsProductCategoryWithChildrenItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/ums/service/MemberLevelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-api/target/classes/com/ywc/ymall/ums/service/MemberLevelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-cms/src/main/java/com/ywc/ymall/cms/service/impl/PrefrenceAreaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-cms/src/main/java/com/ywc/ymall/cms/service/impl/PrefrenceAreaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-cms/src/main/java/com/ywc/ymall/cms/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-cms/src/main/java/com/ywc/ymall/cms/service/impl/SubjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-oms/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-pms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/YmallPmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/YmallPmsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/ProductAttributeValueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/ProductAttributeValueMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/ProductCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/ProductCategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/AlbumMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/AlbumPicMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/BrandMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/CommentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/CommentReplayMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/FeightTemplateMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/MemberPriceMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductAttributeCategoryMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductAttributeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductAttributeValueMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductCategoryAttributeRelationMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductCategoryMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductFullReductionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductLadderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductOperateLogMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/ProductVertifyRecordMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/mapper/xml/SkuStockMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/BrandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/ProductAttributeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/ProductAttributeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/ProductAttributeCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/ProductAttributeCategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/ProductCategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/src/test/java/com/ywc/ymall/pms/YmallPmsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/test/java/com/ywc/ymall/pms/YmallPmsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/SkuStockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/java/com/ywc/ymall/pms/service/impl/SkuStockServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductAttributeValueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductAttributeValueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/src/main/resources/mapper/ProductCategoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/YmallPmsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/YmallPmsApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/mapper/ProductAttributeValueMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/mapper/ProductAttributeValueMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/mapper/ProductCategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/mapper/ProductCategoryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/BrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/BrandServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/ProductAttributeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/ProductAttributeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/ProductAttributeCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/ProductAttributeCategoryServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/ProductCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/ProductCategoryServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/ProductServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-pms/target/test-classes/com/ywc/ymall/pms/YmallPmsApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/test-classes/com/ywc/ymall/pms/YmallPmsApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-sms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-sms/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-sms/src/main/java/com/ywc/ymall/sms/YmallSmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-sms/src/main/java/com/ywc/ymall/sms/YmallSmsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-sms/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-ums/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-ums/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-ums/src/main/java/com/ywc/ymall/ums/YmallUmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-ums/src/main/java/com/ywc/ymall/ums/YmallUmsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-ums/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/SkuStockServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/com/ywc/ymall/pms/service/impl/SkuStockServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/mapper/ProductAttributeValueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/mapper/ProductAttributeValueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-pms/target/classes/mapper/ProductCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-pms/target/classes/mapper/ProductCategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-sms/src/main/java/com/ywc/ymall/sms/service/impl/HomeAdvertiseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-sms/src/main/java/com/ywc/ymall/sms/service/impl/HomeAdvertiseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-ums/src/main/java/com/ywc/ymall/ums/service/impl/MemberLevelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-ums/src/main/java/com/ywc/ymall/ums/service/impl/MemberLevelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-ums/target/classes/com/ywc/ymall/ums/service/impl/MemberLevelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-ums/target/classes/com/ywc/ymall/ums/service/impl/MemberLevelServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymall-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/ums/controller/UmsAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/ums/UmsAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/ums/vo/AdminParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/ums/vo/AdminParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/ums/vo/LoginParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/ums/vo/LoginParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/web/YmallWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/YmallWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-web/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-web/src/test/java/com/ywc/ymall/web/YmallWebApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/src/test/java/com/ywc/ymall/YmallWebApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-web/target/classes/com/ywc/ymall/ums/controller/UmsAdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-web/target/classes/com/ywc/ymall/ums/vo/AdminParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymall-web/target/classes/com/ywc/ymall/ums/vo/LoginParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/pms/PmsProductAttributeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/pms/PmsProductAttributeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/pms/PmsProductCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/pms/PmsProductCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/pms/PmsProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/src/main/java/com/ywc/ymall/controller/pms/PmsProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-web/target/classes/com/ywc/ymall/controller/pms/PmsProductAttributeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/target/classes/com/ywc/ymall/controller/pms/PmsProductAttributeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-web/target/classes/com/ywc/ymall/controller/pms/PmsProductCategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/target/classes/com/ywc/ymall/controller/pms/PmsProductCategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymall-web/target/classes/com/ywc/ymall/controller/pms/PmsProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ymall-web/target/classes/com/ywc/ymall/controller/pms/PmsProductController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -487,10 +98,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -529,7 +147,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot-shiro2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ymall-api/src/main/java/com/ywc/ymall/vo/search" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -540,11 +158,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java\ymall-parent\ymall-pms\src\main\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ywc.ymall.pms.service.impl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ywc.ymall.sms.config" />
@@ -553,14 +174,140 @@
       <recent name="com.ywc.ymall.cms.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\ymall-parent\ymall-api\src\main\java\com\ywc\ymall\vo\search" />
+      <recent name="D:\java\ymall-parent\ymall-api\src\main\java\com\ywc\ymall\to\es" />
+      <recent name="D:\java\ymall-parent\ymall-api\src\main\java\com\ywc\ymall\vo" />
       <recent name="D:\java\ymall-parent\ymall-ums\src\main\resources" />
       <recent name="D:\java\ymall-parent\ymall-sms\src\main\resources" />
-      <recent name="D:\java\ymall-parent\ymall-oms\src\main\resources" />
-      <recent name="D:\java\ymall-parent\ymall-cms\src\main\resources" />
-      <recent name="D:\java\ymall-parent\ymall-cms\src\main\java\com\ywc\ymall\cms\service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.YmallWebApplication (1)">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://192.168.157.128:9200" />
+          <option name="urlPath" value="/navigation" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="navigationId" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="navigationName" />
+                <option name="value" value="导航1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="imgPath" />
+                <option name="value" value="http://yaoweicheng.oss-cn-shenzhen.aliyuncs.com/ymall/images/20200505/swiper1.jpg" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://192.168.157.128:9200" />
+          <option name="urlPath" value="/_cat/indices" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://192.168.157.128:9200" />
+          <option name="urlPath" value="/_cat/health" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://192.168.157.128:9200" />
+          <option name="urlPath" value="/_cat/nodes" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://192.168.157.128:9200" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Compound.ymall">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ywc.ymall.CodeGenerator" />
       <module name="ymall-mbg" />
@@ -570,6 +317,55 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="YmallWebApplication (1)" type="SpringBootApplicationConfigurationType" />
+      <toRun name="YmallCmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="YmallPmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="YmallUmsApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ymall" type="CompoundRunConfigurationType">
+      <toRun name="YmallShopPortalApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="YmallSmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="YamllSeachApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="YmallWebApplication (1)" type="SpringBootApplicationConfigurationType" />
+      <toRun name="YmallCmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="YmallUmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="YmallPmsApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="YamllSeachApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yamll_seach" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ywc.ymall.seach.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ywc.ymall.seach" />
+      <option name="MAIN_CLASS_NAME" value="com.ywc.ymall.seach.YamllSeachApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YamllSeachApplicationTests.contextLoads1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yamll_seach" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ywc.ymall.seach.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ywc.ymall.seach" />
+      <option name="MAIN_CLASS_NAME" value="com.ywc.ymall.seach.YamllSeachApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -606,6 +402,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="YamllSeachApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="yamll_seach" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ywc.ymall.seach.YamllSeachApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="YmallCmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ymall-cms" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ywc.ymall.cms.YmallCmsApplication" />
@@ -623,6 +426,13 @@
     <configuration name="YmallPmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ymall-pms" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ywc.ymall.pms.YmallPmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YmallShopPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ymall-shop-portal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ywc.shop.YmallShopPortalApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -655,8 +465,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="Compound.ymall" />
+      <item itemvalue="JUnit.YmallPmsApplicationTests.contextLoad1" />
+      <item itemvalue="JUnit.YmallPmsApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.YamllSeachApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.YamllSeachApplicationTests.contextLoads1" />
+      <item itemvalue="Spring Boot.YmallCmsApplication" />
+      <item itemvalue="Spring Boot.YmallOmsApplication" />
+      <item itemvalue="Spring Boot.YmallPmsApplication" />
+      <item itemvalue="Spring Boot.YmallSmsApplication" />
+      <item itemvalue="Spring Boot.YmallUmsApplication" />
+      <item itemvalue="Spring Boot.YmallWebApplication" />
+      <item itemvalue="Spring Boot.YmallWebApplication (1)" />
+      <item itemvalue="Spring Boot.YmallShopPortalApplication" />
+      <item itemvalue="Spring Boot.YamllSeachApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.YamllSeachApplicationTests.contextLoads1" />
+        <item itemvalue="JUnit.YamllSeachApplicationTests.contextLoads" />
         <item itemvalue="JUnit.YmallPmsApplicationTests.contextLoad1" />
         <item itemvalue="JUnit.YmallPmsApplicationTests.contextLoads" />
         <item itemvalue="Application.CodeGenerator" />
@@ -708,7 +537,29 @@
       <workItem from="1586248595051" duration="1969000" />
       <workItem from="1586358844325" duration="183000" />
       <workItem from="1586435007370" duration="229000" />
-      <workItem from="1586840048480" duration="11381000" />
+      <workItem from="1586840048480" duration="12205000" />
+      <workItem from="1586927739404" duration="10330000" />
+      <workItem from="1587011774269" duration="8341000" />
+      <workItem from="1587300353420" duration="3000" />
+      <workItem from="1587304843218" duration="36000" />
+      <workItem from="1587368659593" duration="1886000" />
+      <workItem from="1587479821029" duration="2641000" />
+      <workItem from="1587556854415" duration="17000" />
+      <workItem from="1587571370923" duration="69000" />
+      <workItem from="1588312239835" duration="5219000" />
+      <workItem from="1588389601031" duration="10091000" />
+      <workItem from="1588489896670" duration="2055000" />
+      <workItem from="1588564528800" duration="7593000" />
+      <workItem from="1588657180304" duration="16888000" />
+      <workItem from="1588727559973" duration="18000" />
+      <workItem from="1588740872876" duration="8097000" />
+      <workItem from="1588830855843" duration="9160000" />
+      <workItem from="1588906288094" duration="278000" />
+      <workItem from="1588914181756" duration="1530000" />
+      <workItem from="1588916118766" duration="2196000" />
+      <workItem from="1589447932733" duration="9000" />
+      <workItem from="1589556162420" duration="5823000" />
+      <workItem from="1589698894965" duration="9947000" />
     </task>
     <task id="LOCAL-00001" summary="项目结构创建">
       <created>1584680077888</created>
@@ -738,7 +589,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584864150044</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完成部分商品管理功能">
+      <created>1586877332113</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586877332113</updated>
+    </task>
+    <task id="LOCAL-00006" summary="完成部分商品管理功能">
+      <created>1586877381789</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586877381789</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -767,105 +632,128 @@
     <MESSAGE value="项目结构创建" />
     <MESSAGE value="项目逆向成功" />
     <MESSAGE value="项目全部配置文件和完成登录功能。" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目全部配置文件和完成登录功能。" />
+    <MESSAGE value="完成部分商品管理功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成部分商品管理功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Project_Structure" timestamp="1584689916902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584689916902" />
+    <state x="2506" y="188" width="1165" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589723314762">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2506" y="188" width="1165" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589723314762" />
     <state x="707" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584779182142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584779182142" />
-    <state x="765" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1586876183563">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2685" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1589727048024">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="232" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586876183563" />
-    <state x="2685" y="232" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584863477612" />
+    <state x="2685" y="232" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589727048024" />
     <state x="602" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586857627312">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="602" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586857627312" />
-    <state x="284" y="212" width="1291" height="715" key="CommitChangelistDialog2" timestamp="1586877327070">
+    <state x="2318" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588689680706">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2318" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588689680706" />
+    <state x="284" y="212" width="1291" height="715" key="CommitChangelistDialog2" timestamp="1586877604607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="284" y="212" width="1291" height="715" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586877327070" />
+    <state x="284" y="212" width="1291" height="715" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586877604607" />
     <state x="2486" y="119" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864144474" />
     <state x="686" y="201" key="FileChooserDialogImpl" timestamp="1584955429504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="161" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1584602001671" />
     <state x="686" y="201" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584955429504" />
-    <state width="1877" height="556" key="GridCell.Tab.0.bottom" timestamp="1586876463661">
+    <state x="823" y="415" width="274" height="261" key="Github.ShareDialog" timestamp="1586877594964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="556" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586876463661" />
-    <state width="1877" height="459" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864089250" />
-    <state width="1877" height="556" key="GridCell.Tab.0.center" timestamp="1586876463660">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="823" y="415" width="274" height="261" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586877594964" />
+    <state width="1877" height="324" key="GridCell.Tab.0.bottom" timestamp="1589728277942">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="556" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586876463660" />
-    <state width="1877" height="459" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864089250" />
-    <state width="1877" height="556" key="GridCell.Tab.0.left" timestamp="1586876463660">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="616" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589557142980" />
+    <state width="1877" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589728277942" />
+    <state width="1877" height="324" key="GridCell.Tab.0.center" timestamp="1589728277942">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="556" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586876463660" />
-    <state width="1877" height="459" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864089249" />
-    <state width="1877" height="556" key="GridCell.Tab.0.right" timestamp="1586876463660">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="616" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589557142980" />
+    <state width="1877" height="324" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589728277942" />
+    <state width="1877" height="324" key="GridCell.Tab.0.left" timestamp="1589728277942">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="556" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586876463660" />
-    <state width="1877" height="459" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864089250" />
-    <state width="1877" height="556" key="GridCell.Tab.1.bottom" timestamp="1586876463661">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="616" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589557142980" />
+    <state width="1877" height="324" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589728277942" />
+    <state width="1877" height="324" key="GridCell.Tab.0.right" timestamp="1589728277942">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="556" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586876463661" />
-    <state width="1877" height="459" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864089250" />
-    <state width="1877" height="556" key="GridCell.Tab.1.center" timestamp="1586876463661">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="616" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589557142980" />
+    <state width="1877" height="324" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589728277942" />
+    <state width="1877" height="324" key="GridCell.Tab.1.bottom" timestamp="1589728277942">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="556" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586876463661" />
-    <state width="1877" height="459" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864089250" />
-    <state width="1877" height="556" key="GridCell.Tab.1.left" timestamp="1586876463661">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="616" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589557142980" />
+    <state width="1877" height="324" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589728277942" />
+    <state width="1877" height="324" key="GridCell.Tab.1.center" timestamp="1589728277942">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="556" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586876463661" />
-    <state width="1877" height="459" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864089250" />
-    <state width="1877" height="556" key="GridCell.Tab.1.right" timestamp="1586876463661">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1860" height="616" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589557142980" />
+    <state width="1877" height="324" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589728277942" />
+    <state width="1877" height="324" key="GridCell.Tab.1.left" timestamp="1589728277942">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="556" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586876463661" />
-    <state width="1877" height="459" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864089250" />
-    <state x="340" y="77" key="SettingsEditor" timestamp="1585582742750">
+    <state width="1860" height="616" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589557142980" />
+    <state width="1877" height="324" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589728277942" />
+    <state width="1877" height="324" key="GridCell.Tab.1.right" timestamp="1589728277942">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="616" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589557142980" />
+    <state width="1877" height="324" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589728277942" />
+    <state x="340" y="77" key="SettingsEditor" timestamp="1589737211125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="272" y="62" key="SettingsEditor/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1584601915841" />
-    <state x="340" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585582742750" />
-    <state x="2260" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864230050" />
-    <state x="2472" y="244" key="Vcs.Push.Dialog.v2" timestamp="1584864380765">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584783899184" />
-    <state x="2472" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864380765" />
-    <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1586840050003">
+    <state x="340" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589737211125" />
+    <state x="2260" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588742464894" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1586877619195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586840050003" />
-    <state x="2572" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584935377304" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586877619195" />
+    <state x="2472" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584864380765" />
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1589737188684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589737188684" />
+    <state x="2572" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589699025817" />
     <state x="559" y="154" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1584592525336">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="559" y="154" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1584592525336" />
-    <state x="303" y="204" key="new project wizard" timestamp="1586359024088">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2639" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588915930108">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2639" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588915930108" />
+    <state x="2223" y="204" key="new project wizard" timestamp="1588660564328">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="178" y="121" key="new project wizard/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1584590747295" />
     <state x="303" y="204" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586359024088" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1584591023327">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="2223" y="204" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588660564328" />
+    <state x="2730" y="244" key="run.anything.popup" timestamp="1589563138570">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2730" y="244" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589563138570" />
+    <state x="2459" y="193" width="840" height="846" key="search.everywhere.popup" timestamp="1588567543432">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1584591023327" />
+    <state x="2459" y="193" width="840" height="846" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588567543432" />
   </component>
   <component name="ZooKeeperConfig">
     <option name="host" value="192.168.157.128" />

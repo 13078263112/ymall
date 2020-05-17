@@ -6,6 +6,7 @@ dubbo:
     protocol: zookeeper
   consumer:
     check: false
+    timeout: 3000
 server:
   port: 8080
 ymall:
@@ -14,4 +15,14 @@ ymall:
     secret: ywc_2020
     expiration: 604800
     tokenHead: Token
-
+aliyum:
+  oss:
+    endpoint: oss-cn-shenzhen.aliyuncs.com
+    accessKeyId: LTAI4G75LebDcupkHjJvGNu3
+    accessKeySecret: MQG7YMqR6Kbr6PUFlgrCgOzdpqHxMG
+    bucketName: yaoweicheng
+    policy:
+      expire: 300
+    maxSize: 10
+    dir:
+      prefix: ymall/images/

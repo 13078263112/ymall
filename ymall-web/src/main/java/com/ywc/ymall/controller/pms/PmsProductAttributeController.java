@@ -10,7 +10,8 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
-/**商品属性管理
+/**
+ * 商品属性管理
  * @author 嘟嘟~
  * @date 2020/4/14 22:48
  */
@@ -33,4 +34,11 @@ public class PmsProductAttributeController {
         PageInfoVo pageInfoVo = productAttributeService.getCategoryAttributes(cid,type,pageSize,pageNum);
         return new ResultParam().success(pageInfoVo);
     }
+    @ApiOperation("根据商品分类的id获取商品属性及属性分类")
+    @GetMapping(value = "/attrInfo/{productCategoryId}")
+    public Object getAttrInfo(@PathVariable Long productCategoryId){
+        //TODO 根据分类查询属性列表或参数列表
+        return new ResultParam().success(null);
+    }
+
 }

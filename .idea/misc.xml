@@ -14,6 +14,8 @@
         <option value="$PROJECT_DIR$/ymall-sms/pom.xml" />
         <option value="$PROJECT_DIR$/ymall-cms/pom.xml" />
         <option value="$PROJECT_DIR$/ymall-web/pom.xml" />
+        <option value="$PROJECT_DIR$/ymall-shop-portal/pom.xml" />
+        <option value="$PROJECT_DIR$/yamll_seach/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

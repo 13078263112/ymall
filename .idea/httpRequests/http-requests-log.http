@@ -1,0 +1,54 @@
+POST http://192.168.157.128:9200/navigation?=&navigationId=1&navigationName=导航1&imgPath=http://yaoweicheng.oss-cn-shenzhen.aliyuncs.com/ymall/images/20200505/swiper1.jpg
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-05-06T084729.400.txt
+
+###
+
+GET http://192.168.157.128:9200/_cat/indices
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-05-02T092550.200.txt
+
+###
+
+GET http://192.168.157.128:9200/_cat/health
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-05-02T092431.200.txt
+
+###
+
+GET http://192.168.157.128:9200/_cat/nodes
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-05-02T092359.200.txt
+
+###
+
+GET http://192.168.157.128:9200
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-05-02T092313.200.json
+
+###
+
+GET http://192.168.157.129:9200
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://192.168.157.128:9200
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-05-02T092305.200.json
+
+###
+

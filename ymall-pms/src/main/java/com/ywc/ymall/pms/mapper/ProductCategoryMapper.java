@@ -17,4 +17,6 @@ import java.util.List;
 public interface ProductCategoryMapper extends BaseMapper<ProductCategory> {
 
     List<PmsProductCategoryWithChildrenItem> listWithChildren(int id);
+
+    void updateCountById(Long id);
 }

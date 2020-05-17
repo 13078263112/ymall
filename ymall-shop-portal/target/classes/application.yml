@@ -1,0 +1,11 @@
+server:
+  port: 8081
+dubbo:
+  application:
+    name: ymall-shop-portal
+  registry:
+    address: 192.168.157.128:2181
+    protocol: zookeeper
+  consumer:
+    check: false
+    timeout: 3000

@@ -2,6 +2,7 @@ package com.ywc.ymall.pms.service;
 
 import com.ywc.ymall.pms.entity.ProductAttributeCategory;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywc.ymall.vo.PageInfoVo;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ProductAttributeCategoryService extends IService<ProductAttributeCategory> {
 
+    PageInfoVo roductAttributeCategoryPageInfo(Integer pageNum, Integer pageSize);
 }

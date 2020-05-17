@@ -33,4 +33,10 @@
         /*id是什么相当于查询的这个菜单的子菜单*/
         select * from pms_product_category where parent_id = #{id}
     </select>
+   <!-- void updateCountById(Long id);-->
+    <update id="updateCountById">
+        UPDATE `pms_product_category` SET product_count=product_count+1
+        WHERE id = #{id}
+    </update>
+
 </mapper>

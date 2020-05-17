@@ -1,0 +1,2 @@
+yellow open applog  knPSvS9qRaWbobzNfy7JzQ 5 1 142704 0 62.5mb 62.5mb
+yellow open .kibana PGJ631eJTjG0r_aKrNr9uQ 1 1      1 0  3.2kb  3.2kb

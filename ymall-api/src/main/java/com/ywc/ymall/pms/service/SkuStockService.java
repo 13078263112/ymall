@@ -2,6 +2,9 @@ package com.ywc.ymall.pms.service;
 
 import com.ywc.ymall.pms.entity.SkuStock;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywc.ymall.vo.PageInfoVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface SkuStockService extends IService<SkuStock> {
 
+    List<SkuStock> querySkuByIdByName(Long pid, String keyword);
+
+    int updateSkuByPid(List<SkuStock> skuStockList);
 }

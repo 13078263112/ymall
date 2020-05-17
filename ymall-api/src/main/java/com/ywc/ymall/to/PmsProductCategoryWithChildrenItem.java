@@ -1,9 +1,8 @@
 package com.ywc.ymall.to;
 
+import com.alibaba.fastjson.JSON;
 import com.ywc.ymall.pms.entity.ProductCategory;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
@@ -16,4 +15,6 @@ import java.util.List;
 @NoArgsConstructor
 public class PmsProductCategoryWithChildrenItem  extends ProductCategory {
     private List<PmsProductCategoryWithChildrenItem> children;
+
+
 }

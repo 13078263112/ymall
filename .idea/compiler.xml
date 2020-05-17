@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ymall-web" />
-        <module name="ymall-oms" />
+        <module name="ymall-shop-portal" />
+        <module name="yamll_seach" />
         <module name="ymall-cms" />
         <module name="ymall-pms" />
         <module name="ymall-api" />
         <module name="ymall-common" />
+        <module name="ymall-oms" />
         <module name="ymall-ums" />
         <module name="ymall-sms" />
       </profile>
@@ -23,9 +25,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="yamll_seach" options="-parameters" />
       <module name="ymall-cms" options="-parameters" />
       <module name="ymall-oms" options="-parameters" />
       <module name="ymall-pms" options="-parameters" />
+      <module name="ymall-shop-portal" options="-parameters" />
       <module name="ymall-sms" options="-parameters" />
       <module name="ymall-ums" options="-parameters" />
       <module name="ymall-web" options="-parameters" />

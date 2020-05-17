@@ -1,0 +1,17 @@
+spring:
+  elasticsearch:
+    jest:
+      uris[0]: http://192.168.157.128:9200
+dubbo:
+  application:
+    name: yamll_seach
+  registry:
+    address: 192.168.157.128:2181
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 21380
+  consumer:
+    check: false
+  scan:
+    base-packages: com.ywc.ymall.seach.service.impl
