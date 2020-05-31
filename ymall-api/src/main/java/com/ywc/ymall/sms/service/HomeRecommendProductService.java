@@ -2,6 +2,9 @@ package com.ywc.ymall.sms.service;
 
 import com.ywc.ymall.sms.entity.HomeRecommendProduct;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywc.ymall.vo.PageInfoVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,15 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface HomeRecommendProductService extends IService<HomeRecommendProduct> {
 
+    List<HomeRecommendProduct> queryAll();
+
+    PageInfoVo listrecommendProductForPage(String productName, Integer recommendStatus, Integer pageSize, Integer pageNum);
+
+    void create(List<HomeRecommendProduct> homeBrandList);
+
+    void updateSort(Long id, Integer sort);
+
+    void deleteByIds(List<Long> ids);
+
+    void updateRecommendStatus(List<Long> ids, Integer recommendStatus);
 }

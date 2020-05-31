@@ -35,4 +35,7 @@ public interface ProductService extends IService<Product> {
     Product  productInfo(Long id);
 
     List<Product> queryAllByRecommand();
+
+
+    void updateProduct(Long id, PmsProductParam productParam);
 }

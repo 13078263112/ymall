@@ -1,6 +1,8 @@
 package com.ywc.ymall.controller.pms;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.ywc.ymall.controller.pms.vo.PmsProductCategoryParam;
+import com.ywc.ymall.pms.entity.ProductAttribute;
 import com.ywc.ymall.pms.entity.ProductCategory;
 import com.ywc.ymall.pms.service.ProductCategoryService;
 import com.ywc.ymall.to.ResultParam;
@@ -8,6 +10,9 @@ import com.ywc.ymall.to.PmsProductCategoryWithChildrenItem;
 import com.ywc.ymall.vo.PageInfoVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.BeanUtils;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -46,5 +51,36 @@ public class PmsProductCategoryController {
     public Object getItem(@PathVariable Long id) {
         return new ResultParam().success(productCategoryService.queryById(id));
     }
+    @ApiOperation("添加产品分类")
+    @PostMapping(value = "/create")
+    public Object create(@Validated @RequestBody PmsProductCategoryParam productCategoryParam,
+                         BindingResult result) {
+        //TODO 添加产品分类
+        ProductCategory productCategory=new ProductCategory();
+        BeanUtils.copyProperties(productCategoryParam,productCategory);
+        productCategoryService.create(productCategory);
+        return new ResultParam().success(true);
+    }
 
+    @ApiOperation("删除商品分类")
+    @GetMapping(value = "/delete/{id}")
+    public Object delete(@PathVariable Long id) {
+        //TODO 删除商品分类
+        productCategoryService.deleteById(id);
+        return new ResultParam().success(null);
+    }
+    @ApiOperation("修改导航栏显示状态")
+    @PostMapping(value = "/update/navStatus")
+    public Object updateNavStatus(@RequestParam("ids") List<Long> ids, @RequestParam("navStatus") Integer navStatus) {
+        productCategoryService.updateNavStatus(ids,navStatus);
+        //TODO 修改导航栏显示状态
+        return new ResultParam().success(null);
+    }
+    @ApiOperation("修改显示状态")
+    @PostMapping(value = "/update/showStatus")
+    public Object updateShowStatus(@RequestParam("ids") List<Long> ids, @RequestParam("showStatus") Integer showStatus) {
+        //TODO 修改显示状态
+        productCategoryService.updateShowStatus(ids,showStatus);
+        return new ResultParam().success(null);
+    }
 }

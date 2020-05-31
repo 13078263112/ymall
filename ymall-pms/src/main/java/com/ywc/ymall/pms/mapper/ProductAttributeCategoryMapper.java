@@ -2,6 +2,9 @@ package com.ywc.ymall.pms.mapper;
 
 import com.ywc.ymall.pms.entity.ProductAttributeCategory;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.ywc.ymall.to.PmsProductAttributeCategoryWithChildrenItem;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +15,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2020-03-20
  */
 public interface ProductAttributeCategoryMapper extends BaseMapper<ProductAttributeCategory> {
-
+    List<PmsProductAttributeCategoryWithChildrenItem> getListWithAttr();
 }

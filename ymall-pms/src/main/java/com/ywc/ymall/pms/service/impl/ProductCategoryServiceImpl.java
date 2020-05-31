@@ -48,9 +48,7 @@ public class ProductCategoryServiceImpl extends ServiceImpl<ProductCategoryMappe
             List<PmsProductCategoryWithChildrenItem> items = JSON.parseArray(cache, PmsProductCategoryWithChildrenItem.class);
             return items;
         }
-
-        ProductCategoryMapper baseMapper = getBaseMapper();
-        List<PmsProductCategoryWithChildrenItem> items = baseMapper.listWithChildren(0);
+        List<PmsProductCategoryWithChildrenItem> items = this.baseMapper.listWithChildren(0);
         //存数据都给一个过期时间比较好；
         String jsonString = JSON.toJSONString(items);
         ops.set(RedisCacheConstant.PRODUCT_CATEGORY_CACHE_KEY,jsonString,3, TimeUnit.DAYS);
@@ -86,23 +84,52 @@ public class ProductCategoryServiceImpl extends ServiceImpl<ProductCategoryMappe
 
     @Override
     public List<PmsProductCategoryWithChildrenItem> listWithChildrenById(Integer parentId) {
+
         ValueOperations<String, String> ops = redisTemplate.opsForValue();
 
         String cache = ops.get(RedisCacheConstant.PRODUCT_CATEGORY_CACHE_KEY+parentId);
         if(!StringUtils.isEmpty(cache)){
-
             //转化过来返回出去
             List<PmsProductCategoryWithChildrenItem> items = JSON.parseArray(cache, PmsProductCategoryWithChildrenItem.class);
             return items;
         }
 
-        ProductCategoryMapper baseMapper = getBaseMapper();
-        List<PmsProductCategoryWithChildrenItem> items = baseMapper.listWithChildren(parentId);
+        List<PmsProductCategoryWithChildrenItem> items = this.baseMapper.listWithChildren(parentId);
         //存数据都给一个过期时间比较好；
         String jsonString = JSON.toJSONString(items);
         ops.set(RedisCacheConstant.PRODUCT_CATEGORY_CACHE_KEY+parentId,jsonString,3, TimeUnit.DAYS);
         //查某个菜单的所有子菜单
         //TODO 这个数据加缓存，
         return items;
+    }
+
+    @Override
+    public void create(ProductCategory productCategory) {
+        this.baseMapper.insert(productCategory);
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        this.baseMapper.deleteById(id);
+    }
+
+    @Override
+    public void updateNavStatus(List<Long> ids, Integer navStatus) {
+        for (Long id : ids) {
+            ProductCategory productCategory = new ProductCategory();
+            productCategory.setId(id);
+            productCategory.setNavStatus(navStatus);
+            this.baseMapper.updateById(productCategory);
+        }
+    }
+
+    @Override
+    public void updateShowStatus(List<Long> ids, Integer showStatus) {
+        for (Long id : ids) {
+            ProductCategory productCategory = new ProductCategory();
+            productCategory.setId(id);
+            productCategory.setShowStatus(showStatus);
+            this.baseMapper.updateById(productCategory);
+        }
     }
 }

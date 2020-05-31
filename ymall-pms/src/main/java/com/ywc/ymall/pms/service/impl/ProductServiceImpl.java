@@ -280,18 +280,71 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
         psProxy.updateProductCategoryCount();
 
     }
-
+    @Override
+    public void updateProduct(Long id, PmsProductParam productParam) {
+        updteProducts(productParam);
+        //Require
+        if(productParam.getProductLadderList()!=null){
+            updateProductLadder(id,productParam.getProductLadderList());//【REQUIRED_NEW】
+        }
+        if(productParam.getProductFullReductionList()!=null){
+            updateProductFullReduction(id,productParam.getProductFullReductionList());
+        }
+        if(productParam.getMemberPriceList()!=null){
+            updateMemberPrice(id,productParam.getMemberPriceList());
+        }
+        if(productParam.getProductAttributeValueList()!=null){
+            updateProductAttributeValue(id,productParam.getProductAttributeValueList());
+        }
+    }
     @Override
     public Product productInfo(Long id) {
         return this.baseMapper.selectById(id);
     }
-
     @Override
     public List<Product> queryAllByRecommand() {
         QueryWrapper<Product> wrapper = new QueryWrapper<>();
         wrapper.eq("recommand_status",1);
         return this.baseMapper.selectList(wrapper);
     }
+
+    public void updteProducts(PmsProductParam productParam) {
+        Product product = new Product();
+        BeanUtils.copyProperties(productParam,product);
+        baseMapper.updateById(product);
+    }
+    public void updateProductLadder(Long id,List<ProductLadder> list){
+        for (ProductLadder ladder : list) {
+            QueryWrapper<ProductLadder> wrapper = new QueryWrapper<ProductLadder>().eq("product_id",id);
+            productLadderMapper.update(ladder,wrapper);
+
+        }
+    }
+    public void updateProductFullReduction(Long id,List<ProductFullReduction> list){
+        for (ProductFullReduction reduction : list) {
+            QueryWrapper<ProductFullReduction> wrapper = new QueryWrapper<ProductFullReduction>().eq("product_id",id);
+            productFullReductionMapper.update(reduction,wrapper);
+        }
+    }
+    public void updateMemberPrice(Long id,List<MemberPrice> memberPrices){
+
+        for (MemberPrice memberPrice : memberPrices) {
+            QueryWrapper<MemberPrice> wrapper = new QueryWrapper<MemberPrice>().eq("product_id",id);
+            memberPriceMapper.update(memberPrice,wrapper);
+        }
+
+    }
+
+    //6、保存参数及自定义规格 到 pms_product_attribute_value（）【REQUIRES_NEW】
+    public  void updateProductAttributeValue(Long id,List<ProductAttributeValue> productAttributeValues){
+
+        productAttributeValues.forEach((pav)->{
+            QueryWrapper<ProductAttributeValue> wrapper = new QueryWrapper<ProductAttributeValue>().eq("product_id",id);
+            productAttributeValueMapper.update(pav,wrapper);
+        });
+    }
+
+
 
     public void saveBaseProductInfo(PmsProductParam productParam){
         ProductServiceImpl psProxy = (ProductServiceImpl) AopContext.currentProxy();

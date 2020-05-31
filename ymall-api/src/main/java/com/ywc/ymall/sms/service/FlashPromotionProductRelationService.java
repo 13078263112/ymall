@@ -2,6 +2,9 @@ package com.ywc.ymall.sms.service;
 
 import com.ywc.ymall.sms.entity.FlashPromotionProductRelation;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywc.ymall.vo.PageInfoVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,13 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface FlashPromotionProductRelationService extends IService<FlashPromotionProductRelation> {
 
+    List<FlashPromotionProductRelation> selectByflashPromotionId(Long flashPromotionId);
+
+    PageInfoVo listRelationForPage(Long flashPromotionId, Long flashPromotionSessionId, Integer pageSize, Integer pageNum);
+
+    void create(List<FlashPromotionProductRelation> relationList);
+
+    void updateFlashPromotionProductRelationById(FlashPromotionProductRelation relation);
+
+    void deleteById(Long id);
 }

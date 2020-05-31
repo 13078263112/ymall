@@ -72,18 +72,14 @@ public class PmsProductController {
     @PostMapping(value = "/update/{id}")
     public Object update(@PathVariable Long id, @RequestBody PmsProductParam productParam, BindingResult bindingResult) {
         //TODO 更新商品
-        System.out.println(productParam.getId());
+        productService.updateProduct(id,productParam);
         return new ResultParam().success(null);
     }
     @ApiOperation("创建商品")
     @PostMapping(value = "/create")
     public Object create(@Valid @RequestBody PmsProductParam productParam,
                          BindingResult bindingResult) {
-        System.out.println(productParam);
-
-        //创建商品
        productService.create(productParam);
-        // productAttributeService.create(productParam);
         return new ResultParam().success(null);
     }
 

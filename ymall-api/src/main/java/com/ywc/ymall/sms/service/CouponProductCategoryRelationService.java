@@ -3,6 +3,8 @@ package com.ywc.ymall.sms.service;
 import com.ywc.ymall.sms.entity.CouponProductCategoryRelation;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 优惠券和产品分类关系表 服务类
@@ -13,4 +15,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface CouponProductCategoryRelationService extends IService<CouponProductCategoryRelation> {
 
+    List<CouponProductCategoryRelation> selectByCoupondId(Long id);
+
+    void insert(CouponProductCategoryRelation relation);
 }

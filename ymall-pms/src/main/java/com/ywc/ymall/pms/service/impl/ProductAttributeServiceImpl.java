@@ -12,6 +12,8 @@ import com.ywc.ymall.pms.service.ProductAttributeService;
 import com.ywc.ymall.vo.PageInfoVo;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 
 /**
  * <p>
@@ -35,4 +37,34 @@ public class ProductAttributeServiceImpl extends ServiceImpl<ProductAttributeMap
 
         return PageInfoVo.getVo(productAttributeIPage,pageSize.longValue());
     }
+
+    @Override
+    public ProductAttribute queryCategoryAttributesById(Long id) {
+        return this.baseMapper.selectById(id);
+    }
+
+    @Override
+    public void deleteCategoryAttributesByIds(List<Long> ids) {
+        for (Long id : ids) {
+            this.baseMapper.deleteById(id);
+        }
+    }
+
+    @Override
+    public void createProductAttribute(ProductAttribute productAttribute) {
+        this.baseMapper.insert(productAttribute);
+    }
+
+    @Override
+    public boolean updateProductAttributeById(ProductAttribute productAttribute) {
+        return 1==this.baseMapper.updateById(productAttribute)?true:false;
+    }
+
+    @Override
+    public List<ProductAttribute> queryCategoryAttributesByproductCategoryId(Long productCategoryId) {
+        QueryWrapper<ProductAttribute> eq = new QueryWrapper<ProductAttribute>()
+                .eq("product_attribute_category_id", productCategoryId);
+        return this.baseMapper.selectList(eq);
+    }
+
 }

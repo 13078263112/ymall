@@ -44,4 +44,5 @@ public class HomeRecommendProduct implements Serializable {
     private Integer sort;
 
 
+
 }

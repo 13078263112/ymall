@@ -2,6 +2,7 @@ package com.ywc.ymall.cms.service;
 
 import com.ywc.ymall.cms.entity.Subject;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywc.ymall.vo.PageInfoVo;
 
 import java.util.List;
 
@@ -16,4 +17,6 @@ import java.util.List;
 public interface SubjectService extends IService<Subject> {
 
     List<Subject> listAll();
+
+    PageInfoVo listForPage(String keyword, Integer pageNum, Integer pageSize);
 }

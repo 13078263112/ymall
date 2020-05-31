@@ -2,6 +2,9 @@ package com.ywc.ymall.oms.service;
 
 import com.ywc.ymall.oms.entity.OrderReturnReason;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywc.ymall.vo.PageInfoVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,15 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface OrderReturnReasonService extends IService<OrderReturnReason> {
 
+    PageInfoVo OrderReturnReason(Integer pageSize, Integer pageNum);
+
+    void create(OrderReturnReason orderReturnReason);
+
+    void updateStatus(Long id, Integer status);
+
+    OrderReturnReason queryOrderReturnReasonById(Long id);
+
+    void updateOrderReturnReason(OrderReturnReason orderReturnReason);
+
+    void delete(List<Long> ids);
 }

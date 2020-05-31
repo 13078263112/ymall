@@ -9,12 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ymall-web" />
         <module name="ymall-shop-portal" />
-        <module name="yamll_seach" />
         <module name="ymall-cms" />
+        <module name="ymall-oms" />
         <module name="ymall-pms" />
         <module name="ymall-api" />
         <module name="ymall-common" />
-        <module name="ymall-oms" />
+        <module name="yamll_seach" />
         <module name="ymall-ums" />
         <module name="ymall-sms" />
       </profile>

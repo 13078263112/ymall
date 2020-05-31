@@ -13,4 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface OrderSettingService extends IService<OrderSetting> {
 
+    OrderSetting queryOrderSettingById(Long id);
+
+    void updateOrderSettingById(OrderSetting orderSetting);
 }

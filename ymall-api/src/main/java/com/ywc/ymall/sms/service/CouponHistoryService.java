@@ -2,6 +2,7 @@ package com.ywc.ymall.sms.service;
 
 import com.ywc.ymall.sms.entity.CouponHistory;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywc.ymall.vo.PageInfoVo;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface CouponHistoryService extends IService<CouponHistory> {
 
+    PageInfoVo listCouponHistoryForPage(Long couponId, Integer useStatus, String orderSn, Integer pageSize, Integer pageNum);
 }

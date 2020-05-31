@@ -6,5 +6,54 @@
     <sql id="Base_Column_List">
         id, name, attribute_count, param_count
     </sql>
-
+    <resultMap id="BaseResultMapProductAttributeCategory" type="com.ywc.ymall.pms.entity.ProductAttributeCategory">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="attribute_count" property="attributeCount" />
+        <result column="param_count" property="paramCount" />
+    </resultMap>
+    <resultMap id="BaseResultMapProductAttribute" type="com.ywc.ymall.pms.entity.ProductAttribute">
+        <id column="id" property="id" />
+        <result column="product_attribute_category_id" property="productAttributeCategoryId" />
+        <result column="name" property="name" />
+        <result column="select_type" property="selectType" />
+        <result column="input_type" property="inputType" />
+        <result column="input_list" property="inputList" />
+        <result column="sort" property="sort" />
+        <result column="filter_type" property="filterType" />
+        <result column="search_type" property="searchType" />
+        <result column="related_status" property="relatedStatus" />
+        <result column="hand_add_status" property="handAddStatus" />
+        <result column="type" property="type" />
+    </resultMap>
+    <resultMap id="listWithChildrenResultMap" type="com.ywc.ymall.to.PmsProductAttributeCategoryWithChildrenItem" extends="BaseResultMapProductAttributeCategory">
+        <!--<result property="children" ></result>-->
+        <!--这个children是一个对象，指定封装规则-->
+        <!--<association property="children"></association>-->
+        <!--这个children是一个集合-->
+        <!--column=""将这次查询的指定的这一列的值传下去作为下一次查询使用的值，写列名，代表将哪一列的值传下去-->
+        <collection property="children" select="listWithChildren" column="id" ofType="com.ywc.ymall.pms.entity.ProductAttribute">
+            <id column="id" property="id" />
+            <result column="product_attribute_category_id" property="productAttributeCategoryId" />
+            <result column="name" property="name" />
+            <result column="select_type" property="selectType" />
+            <result column="input_type" property="inputType" />
+            <result column="input_list" property="inputList" />
+            <result column="sort" property="sort" />
+            <result column="filter_type" property="filterType" />
+            <result column="search_type" property="searchType" />
+            <result column="related_status" property="relatedStatus" />
+            <result column="hand_add_status" property="handAddStatus" />
+            <result column="type" property="type" />
+        </collection>
+    </resultMap>
+<!--    List<PmsProductAttributeCategoryWithChildrenItem> getListWithAttr();-->
+    <select id="getListWithAttr" resultMap="listWithChildrenResultMap">
+        /*id是什么相当于查询的这个菜单的子菜单*/
+        select * from pms_product_attribute_category
+    </select>
+    <select id="listWithChildren" resultType="com.ywc.ymall.pms.entity.ProductAttribute">
+        /*id是什么相当于查询的这个菜单的子菜单*/
+        select * from pms_product_attribute where product_attribute_category_id = #{id}
+    </select>
 </mapper>

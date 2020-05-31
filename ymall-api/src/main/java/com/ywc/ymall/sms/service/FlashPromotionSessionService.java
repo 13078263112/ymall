@@ -2,6 +2,10 @@ package com.ywc.ymall.sms.service;
 
 import com.ywc.ymall.sms.entity.FlashPromotionSession;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywc.ymall.vo.PageInfoVo;
+import com.ywc.ymall.vo.oms.FlashPromotionSessionParam;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +17,15 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface FlashPromotionSessionService extends IService<FlashPromotionSession> {
 
+    List<FlashPromotionSession> getList();
+
+    void create(FlashPromotionSession promotionSession);
+
+    void updateStatus(Long id, Integer status);
+
+    void updateFlashPromotionSessionById(FlashPromotionSession promotionSession);
+
+    void deleteById(Long id);
+
+    List<FlashPromotionSessionParam> selectListForPage(Long flashPromotionId);
 }

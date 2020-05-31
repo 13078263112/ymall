@@ -3,6 +3,8 @@ package com.ywc.ymall.oms.service;
 import com.ywc.ymall.oms.entity.CompanyAddress;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 公司收发货地址表 服务类
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface CompanyAddressService extends IService<CompanyAddress> {
 
+    List<CompanyAddress> getList();
 }

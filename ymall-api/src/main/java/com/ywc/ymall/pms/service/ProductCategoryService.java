@@ -21,4 +21,12 @@ public interface ProductCategoryService extends IService<ProductCategory> {
     List<ProductCategory> queryByParentId(Long parentId);
 
     List<PmsProductCategoryWithChildrenItem> listWithChildrenById(Integer parentId);
+
+    void create(ProductCategory productCategory);
+
+    void deleteById(Long id);
+
+    void updateNavStatus(List<Long> ids, Integer navStatus);
+
+    void updateShowStatus(List<Long> ids, Integer showStatus);
 }
