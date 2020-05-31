@@ -18,9 +18,9 @@ ymall:
 aliyum:
   oss:
     endpoint: oss-cn-shenzhen.aliyuncs.com
-    accessKeyId: LTAI4G75LebDcupkHjJvGNu3
-    accessKeySecret: MQG7YMqR6Kbr6PUFlgrCgOzdpqHxMG
-    bucketName: yaoweicheng
+    accessKeyId: 
+    accessKeySecret: 
+    bucketName: 
     policy:
       expire: 300
     maxSize: 10
