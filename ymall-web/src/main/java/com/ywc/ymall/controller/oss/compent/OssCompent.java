@@ -8,6 +8,7 @@ import com.ywc.ymall.vo.OssPolicyResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
@@ -17,11 +18,11 @@ import java.util.Date;
  * @date 2020/5/2 11:44
  */
 
-@Service
+@Component
 public class OssCompent {
     @Value("${aliyum.oss.policy.expire}")
     private int ALIYUN_OSS_EXPIRE;
-    @Value("${aliyum.oss.maxSize}")
+    @Value("${aliyum.oss.policy.maxSize}")
     private int ALIYUN_OSS_MAX_SIZE;
     @Value("${aliyum.oss.bucketName}")
     private String ALIYUN_OSS_BUCKET_NAME;

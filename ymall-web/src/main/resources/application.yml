@@ -18,11 +18,11 @@ ymall:
 aliyum:
   oss:
     endpoint: oss-cn-shenzhen.aliyuncs.com
-    accessKeyId: 
-    accessKeySecret: 
-    bucketName: 
+    accessKeyId: LTAI4G75LebDcupkHjJvGNu3
+    accessKeySecret: MQG7YMqR6Kbr6PUFlgrCgOzdpqHxMG
+    bucketName: yaoweicheng
     policy:
       expire: 300
-    maxSize: 10
+      maxSize: 10
     dir:
       prefix: ymall/images/

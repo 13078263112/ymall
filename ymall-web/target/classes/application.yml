@@ -23,6 +23,6 @@ aliyum:
     bucketName: yaoweicheng
     policy:
       expire: 300
-    maxSize: 10
+      maxSize: 10
     dir:
       prefix: ymall/images/
